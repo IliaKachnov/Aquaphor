@@ -594,12 +594,12 @@
 
 /* CAROUSEL */
 
-.wrapper{
+.wrapper__carousel{
   display: flex;
   max-width: 1300px;
   position: relative;
 }
-.wrapper i{
+.wrapper__carousel i{
   top: 60%;
   height: 44px;
   width: 44px;
@@ -614,20 +614,20 @@
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
-.wrapper i:active{
+.wrapper__carousel i:active{
   transform: translateY(-50%) scale(0.9);
 }
-.wrapper i:hover{
+.wrapper__carousel i:hover{
   background: #f2f2f2;
 }
-.wrapper i:first-child{
+.wrapper__carousel i:first-child{
   left: -22px;
   display: none;
 }
-.wrapper i:last-child{
+.wrapper__carousel i:last-child{
   right: -22px;
 }
-.wrapper .carousel{
+.wrapper__carousel .carousel{
   font-size: 0px;
   cursor: pointer;
   overflow: hidden;
