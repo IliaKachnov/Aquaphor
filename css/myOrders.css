@@ -13,18 +13,18 @@
 }
 .personalProfile {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   border-bottom: rgba(43, 27, 53, .1)1px solid;
-  width: 339px;
+  width: 370px;
   margin: 0 auto;
   padding-bottom: 1rem;
 }
 
 .personalProfile li {
   color: #2B1B35;
-  /* font-family: Atyp Text; */
+  font-family: 'AtypText-Regular', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -110,9 +110,9 @@
 .order__info span,
 .order__details span {
   color: #2B1B35;
-  /* font-family: Atyp Text; */
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 14px;
-  font-style: bold;
+  font-style: normal;
   font-weight: 600;
   line-height: 17px;
 }
@@ -157,7 +157,8 @@
 }
 .order__success div span {
   color: #2B1B35;
-  /* font-family: Atyp Text; */
+  font-family: 'AtypText-Regular', sans-serif;
+  letter-spacing: 0.2px;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -224,7 +225,7 @@
 #order-body__wrapper__details,
 #order-body__wrapper__payment {
   color: #2B1B35;
-  /* font-family: Atyp Text; */
+  font-family: 'AtypText-Regular', sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -236,7 +237,7 @@
 #order-body__wrapper__delivery,
 #order-body__wrapper__receiver {
   color: #2B1B35;
-  /* font-family: Atyp Text; */
+  font-family: 'AtypText-Regular', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -246,10 +247,10 @@
 #order-body__wrapper__contacts,
 #order-body__wrapper__readMore {
   color: #2B1B35;
-  /* font-family: Atyp Text; */
+  font-family: 'AtypText-Regular', sans-serif;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 17px;
 }
 #order-body__wrapper__readMore {
@@ -311,7 +312,7 @@
 }
 #order__item__amount {
   color: #2B1B35;
-  /* font-family: Atyp Text; */
+  font-family: 'AtypText-Regular', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -326,10 +327,10 @@
 }
 #order__item__price {
   color: #2B1B35;
-  /* font-family: Atyp Text; */
+  font-family: 'AtypText-Regular', sans-serif;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 18px;
   letter-spacing: -0.5px;
 }
@@ -338,7 +339,7 @@
   color: #2B1B35;
   text-overflow: ellipsis;
   whitespace: nowrap;
-  /* font-family: Atyp Text; */
+  font-family: 'AtypText-Regular', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -362,7 +363,7 @@
 #order__payment__delivery,
 #order__payment__total {
   color: #2B1B35;
-  /* font-family: Atyp Text; */
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -376,10 +377,10 @@
   margin-top: 0;
   margin-right: 16px;
   color: #2B1B35;
-  /* font-family: Atyp Text; */
+  font-family: 'AtypText-Regular', sans-serif;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 17px;
 }
 
@@ -544,4 +545,26 @@
     gap: 20px;
   }
 }
+@media (max-width: 560px) {
+  .personalProfile li.active::after {
+    top: 23px;
+  }
+}
 
+@media (max-width: 400px) {
+  .personalProfile {
+    justify-content: start;
+    width: 346px;
+  }
+  .personalProfile li {
+    font-size: 11px;
+  }
+}
+@media (max-width: 368px) {
+  .personalProfile li {
+    font-size: 10px;
+  }
+  .personalProfile {
+    width: 322px;
+  }
+}

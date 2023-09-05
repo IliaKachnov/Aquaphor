@@ -13,18 +13,18 @@
 }
 .personalProfile {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   justify-content: center;
   align-items: center;
   border-bottom: rgba(43, 27, 53, .1)1px solid;
-  width: 339px;
+  width: 370px;
   margin: 0 auto;
   padding-bottom: 1rem;
 }
 
 .personalProfile li {
   color: #2B1B35;
-  /* font-family: Atyp Text; */
+  font-family: 'AtypText-Regular', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -93,7 +93,7 @@
 }
 .personalData__item div span:first-child {
   color: #2B1B35;
-  /* font-family: Atyp Text; */
+  font-family: 'AtypText-Regular', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -101,10 +101,10 @@
 }
 .personalData__item div span {
   color: #2B1B35;
-  /* font-family: Atyp Text; */
+  font-family: 'AtypText-Regular', sans-serif;
   font-size: 14px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 17px;
   
 }
@@ -301,7 +301,11 @@
   margin-top: 40px;
 }
 /* END POPUP */
-
+@media (max-width: 560px) {
+  .personalProfile li.active::after {
+    top: 23px;
+  }
+}
 @media (max-width: 475px) {
   .personalData__item {
     width: 336px;
@@ -320,7 +324,6 @@
   .popup__phone__body,
   .popup__code__body {
     padding: 0;
-    /* height: 100%; */
   }
   .text-wrapper__input {
     width: 314px;
@@ -342,6 +345,23 @@
   }
   .popup__code__inputs-wrapper {
     width: 340px;
+  }
+}
+@media (max-width: 400px) {
+  .personalProfile {
+    justify-content: start;
+    width: 346px;
+  }
+  .personalProfile li {
+    font-size: 11px;
+  }
+}
+@media (max-width: 368px) {
+  .personalProfile li {
+    font-size: 10px;
+  }
+  .personalProfile {
+    width: 322px;
   }
 }
 @media (max-width: 360px) {
