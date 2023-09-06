@@ -9,11 +9,25 @@ const modalDeleteCancelBtns = document.querySelectorAll('.text-wrapper__btn');
 
 const aboutAccordionSection = document.querySelectorAll('.about__accordion-section');
 const accordionAbouts = document.querySelectorAll(".about__accordion");
+const productItems = document.querySelectorAll('.product__item');
+
+productItems.forEach(item => {
+  item.addEventListener('click', () => {
+    if (!item.classList.contains('active')) {
+      item.classList.add('active');
+      productItems.forEach(otherItem => {
+        if (otherItem !== item && otherItem.classList.contains('active')) {
+          otherItem.classList.remove('active');
+        }
+      });
+    }
+  });
+});
 
 if(window.innerWidth <= 1024) {
   infoAccordionSection.classList.remove('height')
   infoAccordionSection.classList.remove('height-tall')
-}
+};
 
 accordionInfo.addEventListener("click", () => {
   if(window.innerWidth <= 1024) {

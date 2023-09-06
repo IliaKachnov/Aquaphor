@@ -131,6 +131,7 @@
   background: #FFF;
   cursor: pointer;
   transition: all .2s ease;
+  border: 3px solid transparent;
 }
 .product__item:hover {
   box-shadow: 0px 20px 30px 0px rgba(43, 27, 53, 0.10);
@@ -428,19 +429,17 @@
   height: 48px;
   background-color: rgba(229, 239, 255, 0.60);
   color: #2B1B35;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 700;
+  /* font-style: bold; */
+  font-weight: 600;
   line-height: 13px; 
-  letter-spacing: 1.2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   cursor: pointer;
 }
 .btn__add-to-cart span {
-  letter-spacing: normal;
-  font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 13px;
   text-transform: uppercase;
 }
