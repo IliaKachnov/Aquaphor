@@ -1,3 +1,16 @@
+@font-face {
+  font-family: 'AtypText-Regular';
+  src: url('../fonts/AtypText-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AtypText-Semibold';
+  src: url('../fonts/AtypText-Semibold.ttf') format('truetype'); 
+  font-weight: 600;
+}
+
+
 .shop-card {
   background: #F5F6F7;
 
@@ -17,14 +30,14 @@
   justify-content: center;
   align-items: center;
   border-bottom: rgba(43, 27, 53, .1)1px solid;
-  width: 370px;
+  width: 367px;
   margin: 0 auto;
-  padding-bottom: 1rem;
+  padding-bottom: 18px;
 }
 
 .personalProfile li {
   color: #2B1B35;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -52,7 +65,7 @@
   height: 4px;
   background: #0049BC;
   position: absolute;
-  top: 26px;
+  top: 28px;
   cursor: default;
 }
 .personalProfile li a {
@@ -93,7 +106,7 @@
 }
 .personalData__item div span:first-child {
   color: #2B1B35;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -182,6 +195,7 @@
 .text-wrapper__title {
   color: #2B1B35;
   font-size: 24px;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
@@ -301,11 +315,11 @@
   margin-top: 40px;
 }
 /* END POPUP */
-@media (max-width: 560px) {
+/* @media (max-width: 560px) {
   .personalProfile li.active::after {
-    top: 23px;
+    top: 25px;
   }
-}
+} */
 @media (max-width: 475px) {
   .personalData__item {
     width: 336px;

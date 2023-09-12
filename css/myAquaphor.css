@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'AtypText-Regular';
+  src: url('../fonts/AtypText-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AtypText-Semibold';
+  src: url('../fonts/AtypText-Semibold.ttf') format('truetype'); 
+  font-weight: 600;
+}
+
 .shop-card {
   background: #F5F6F7;
 }
@@ -18,13 +30,13 @@
   border-bottom: rgba(43, 27, 53, .1)1px solid;
   width: 370px;
   margin: 0 auto;
-  padding-bottom: 1rem;
+  padding-bottom: 18px;
 }
 
 .personalProfile li {
   color: #2B1B35;
   font-feature-settings: 'ss06' on, 'ss02' on;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -49,7 +61,7 @@
   height: 4px;
   background: #0049BC;
   position: absolute;
-  top: 26px;
+  top: 28px;
   cursor: default;
 }
 .personalProfile li a {
@@ -76,11 +88,11 @@
 .banner__aquaphor div {
   padding-top: 94px;
   padding-left: 24px;
-  width: 300px;
+  width: 400px;
 }
 .banner__aquaphor div a {
   color: #FFF;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -97,7 +109,7 @@
   font-family: 'AtypText-Regular', sans-serif;
   padding-left: 24px;
   padding-top: 12px;
-  width: 210px;
+  width: 222px;
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.5px;
@@ -198,7 +210,7 @@
   transition: 0.4s;
   height: 50px;
   color: #2B1B35;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -213,7 +225,6 @@
 .info__accordion-section,
 .about__accordion-section {
   padding: 0 18px;
-  /* background-color: white; */
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
@@ -239,7 +250,7 @@
 #accordion-info-title,
 .info__delete {
   color: #2B1B35;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -270,7 +281,7 @@
   color: #0049BC;
 }
 .filter__buy {
-  max-width: 1020px;
+  max-width: 1056px;
   width: 100%;
   height: 74px;
   border-radius: 16px;
@@ -282,7 +293,7 @@
 
 #buy__link {
   color: #2B1B35;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -306,13 +317,19 @@
 #serial__number-title {
   margin: 0;
   color: #2B1B35;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
   width: 169px;
   margin-left: 5px;
+}
+#info__title {
+  cursor: pointer;
+}
+#info__title:hover {
+  color: #0049BC;
 }
 #serial__number-title {
   margin-top: 24px;
@@ -337,7 +354,7 @@
   height: 74px;
   background: rgba(228, 231, 235, 0.50);
   color: #2B1B35;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -355,6 +372,10 @@
 }
 .about__accordion:first-child {
   border-bottom: rgba(43, 27, 53, 0.10) 1px solid;
+}
+.about__accordion.active:first-child,
+.about__accordion.active:nth-child(3) {
+  border: none;
 }
 .about__accordion:nth-child(3) {
   border-bottom: rgba(43, 27, 53, 0.10) 1px solid;
@@ -431,7 +452,6 @@
   color: #2B1B35;
   font-family: 'AtypText-Semibold', sans-serif;
   font-size: 12px;
-  /* font-style: bold; */
   font-weight: 600;
   line-height: 13px; 
   letter-spacing: 1px;
@@ -461,7 +481,7 @@
   height: 48px;
   border-radius: 16px;
   color: #2B1B35;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -534,6 +554,7 @@
   color: #2B1B35;
   font-size: 24px;
   font-style: normal;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-weight: 700;
   line-height: 32px;
 }
@@ -544,6 +565,9 @@
   display: flex;
   flex-direction: row;
   gap: 16px;
+}
+.product__title-popup {
+  font-family: 'AtypText-Semibold', sans-serif;
 }
 
 .text-wrapper__btn {
@@ -559,7 +583,7 @@
   border-radius: 100px;
   background: #0049BC;
   color: #FFF;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -586,7 +610,6 @@
 }
 #text-wrapper__confirm span {
   color: #2B1B35;
-  /* font-family: Proxima Nova; */
   font-weight: 700;
 }
 
@@ -601,7 +624,7 @@
 
 .wrapper__carousel{
   display: flex;
-  max-width: 1300px;
+  max-width: 1385px;
   position: relative;
 }
 .wrapper__carousel i{
@@ -656,7 +679,7 @@
   height: 293px;
   object-fit: cover;
   user-select: none;
-  margin-left: 14px;
+  /* margin-left: 14px; */
   width: calc(100% / 6);
 }
 .carousel img:first-child{
@@ -772,7 +795,6 @@
   }
   #banner__aquaphor__receive {
     padding-left: 30px;
-    width: 210px;
   }
 
 }
@@ -792,9 +814,6 @@
   }
 }
 @media (max-width: 560px) {
-  .personalProfile li.active::after {
-    top: 23px;
-  }
 }
 @media screen and (max-width: 550px) {
   .carousel .product__item{

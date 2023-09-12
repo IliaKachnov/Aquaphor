@@ -1,3 +1,15 @@
+@font-face {
+  font-family: 'AtypText-Regular';
+  src: url('../fonts/AtypText-Regular.ttf') format('truetype'); 
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AtypText-Semibold';
+  src: url('../fonts/AtypText-Semibold.ttf') format('truetype'); 
+  font-weight: 600;
+}
+
 .shop-card {
   background: #F5F6F7;
 
@@ -19,12 +31,12 @@
   border-bottom: rgba(43, 27, 53, .1)1px solid;
   width: 370px;
   margin: 0 auto;
-  padding-bottom: 1rem;
+  padding-bottom: 18px;
 }
 
 .personalProfile li {
   color: #2B1B35;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 600;
@@ -52,7 +64,7 @@
   height: 4px;
   background: #0049BC;
   position: absolute;
-  top: 26px;
+  top: 28px;
   cursor: default;
 }
 .personalProfile li a {
@@ -157,7 +169,7 @@
 }
 .order__success div span {
   color: #2B1B35;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   letter-spacing: 0.2px;
   font-size: 20px;
   font-style: normal;
@@ -225,7 +237,7 @@
 #order-body__wrapper__details,
 #order-body__wrapper__payment {
   color: #2B1B35;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 600;
@@ -237,7 +249,7 @@
 #order-body__wrapper__delivery,
 #order-body__wrapper__receiver {
   color: #2B1B35;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -312,7 +324,7 @@
 }
 #order__item__amount {
   color: #2B1B35;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -339,7 +351,7 @@
   color: #2B1B35;
   text-overflow: ellipsis;
   whitespace: nowrap;
-  font-family: 'AtypText-Regular', sans-serif;
+  font-family: 'AtypText-Semibold', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -545,11 +557,11 @@
     gap: 20px;
   }
 }
-@media (max-width: 560px) {
+/* @media (max-width: 560px) {
   .personalProfile li.active::after {
     top: 23px;
   }
-}
+} */
 
 @media (max-width: 400px) {
   .personalProfile {
