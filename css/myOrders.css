@@ -547,7 +547,7 @@
   }
   .order__details-mobile span {
     color: #2B1B35;
-    /* font-family: Atyp Text; */
+    font-family: 'AtypText-Semibold', sans-serif;
     font-size: 14px;
     font-style: bold;
     font-weight: 600;
@@ -557,11 +557,6 @@
     gap: 20px;
   }
 }
-/* @media (max-width: 560px) {
-  .personalProfile li.active::after {
-    top: 23px;
-  }
-} */
 
 @media (max-width: 400px) {
   .personalProfile {
