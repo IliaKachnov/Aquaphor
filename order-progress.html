@@ -7,8 +7,8 @@
 
     <link rel="stylesheet" type="text/css" href="css/aquaphor-banner.styles.css">
     <link rel="preload" href="css/aquaphor-banner.styles.css" as="style">
-    <link rel="stylesheet" href="css/myAquaphor.css">
-    <script src="scripts/myAquaphor.js" defer></script>
+    <link rel="stylesheet" href="css/myOrders.css">
+    <script src="./scripts/myOrder.js" defer></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://www.artfut.com/static/tagtag.min.js?campaign_code=7daad499a8" async onerror='var self = this;window.ADMITAD=window.ADMITAD||{},ADMITAD.Helpers=ADMITAD.Helpers||{},ADMITAD.Helpers.generateDomains=function(){for(var e=new Date,n=Math.floor(new Date(2020,e.getMonth(),e.getDate()).setUTCHours(0,0,0,0)/1e3),t=parseInt(1e12*(Math.sin(n)+1)).toString(30),i=["de"],o=[],a=0;a<i.length;++a)o.push({domain:t+"."+i[a],name:t});return o},ADMITAD.Helpers.findTodaysDomain=function(e){function n(){var o=new XMLHttpRequest,a=i[t].domain,D="https://"+a+"/";o.open("HEAD",D,!0),o.onload=function(){setTimeout(e,0,i[t])},o.onerror=function(){++t<i.length?setTimeout(n,0):setTimeout(e,0,void 0)},o.send()}var t=0,i=ADMITAD.Helpers.generateDomains();n()},window.ADMITAD=window.ADMITAD||{},ADMITAD.Helpers.findTodaysDomain(function(e){if(window.ADMITAD.dynamic=e,window.ADMITAD.dynamic){var n=function(){return function(){return self.src?self:""}}(),t=n(),i=(/campaign_code=([^&]+)/.exec(t.src)||[])[1]||"";t.parentNode.removeChild(t);var o=document.getElementsByTagName("head")[0],a=document.createElement("script");a.src="https://www."+window.ADMITAD.dynamic.domain+"/static/"+window.ADMITAD.dynamic.name.slice(1)+window.ADMITAD.dynamic.name.slice(0,1)+".min.js?campaign_code="+i,o.appendChild(a)}});'></script>
@@ -373,217 +373,87 @@
 			  <h1 id="personalProfile__title">Личный кабинет</h1>
         <div>
           <ul class="personalProfile">
-            <li class="active"><a href="index.html">Мой Аквафор</a></li>
-            <li><a href="myOrders.html">Мои заказы</a></li>
+            <li><a href="index.html">Мой Аквафор</a></li>
+            <li class="active"><a href="myOrders.html">Мои заказы</a></li>
             <li><a href="personalData.html">Личные данные</a></li>
           </ul>
         </div>
-        <!-- BANNER AQUAPHOR -->
-
-        <div class="banner__aquaphor-wrapper">
-          <div class="banner__aquaphor">
-            <div><a href="#">Зарегистрируйте ваши продукты <span>АКВАФОР</span></a></div>
-            <div id="banner__aquaphor__receive">И получайте уведомления о замене модулей</div>
-          </div>
-        </div>
-
-         <!-- END BANNER AQUAPHOR -->
 
 
-        <div class="products">
-          <div class="product__item active">
-            <img src="./images/product1.png">
-            <p id="product__item-title">Фильтр под мойку</p>
-            <p id="product__item-text">Аквафор Кристалл А для жесткой воды</p>
-          </div>
-          <div class="product__item">
-            <img src="./images/product2.png">
-            <p id="product__item-title">Фильтр кувшин</p>
-            <p id="product__item-text">Модуль серии А5, -6, -7, -8</p>
-          </div>
-          <div class="product__item">
-            <img id="product__item_add-icon" src="./images/add.svg">
-            <p id="product__item-title">Добавить новый продукт</p>
-          </div>
-        </div>
 
-        <div class="wrapper__carousel">
-          <i id="left">
-            <img src="images/arrow-swiper-left.svg">
-          </i>
-          <div class="carousel">
-            <div class="product__item active">
-              <img src="./images/product1.png">
-              <p id="product__item-title">Фильтр под мойку</p>
-              <p id="product__item-text">Аквафор Кристалл А для жесткой воды</p>
+        <div class="order__success">
+          <a href="myOrders.html">
+            <div class="order__success-back">
+              <img src="images/arrow-order.svg">
+              <span>К списку заказов</span>
             </div>
-            <div class="product__item">
-              <img src="./images/product3.png">
-              <p id="product__item-title">Фильтр под мойку</p>
-              <p id="product__item-text">Аквафор Кристалл А для жесткой воды</p>
+          </a>
+          <div class="order__success__wrapper">
+            <div class="order__success__wrapper-header">
+              <span id="wrapper-info__order">Заказ № 259789, 568965 от 10.11.2023</span>
+              <span id="wrapper-info__status" class="progress">В обработке</span>
             </div>
-            <div class="product__item">
-              <img src="./images/product4.png">
-              <p id="product__item-title">Фильтр под мойку</p>
-              <p id="product__item-text">Аквафор Кристалл А для жесткой воды</p>
-            </div>
-            <div class="product__item">
-              <img src="./images/product5.png">
-              <p id="product__item-title">Фильтр под мойку</p>
-              <p id="product__item-text">Аквафор Кристалл А для жесткой воды</p>
-            </div>
-            <div class="product__item">
-              <img src="./images/product6.png">
-              <p id="product__item-title">Фильтр под мойку</p>
-              <p id="product__item-text">Аквафор Кристалл А для жесткой воды</p>
-            </div>
-            <div class="product__item">
-              <img src="./images/product2.png">
-              <p id="product__item-title">Фильтр кувшин</p>
-              <p id="product__item-text">Модуль серии А5, -6, -7, -8</p>
-            </div>
-            <div class="product__item">
-              <img id="product__item_add-icon" src="./images/add.svg">
-              <p id="product__item-title">Добавить новый продукт</p>
-            </div>
-            
-          </div>
-          <i id="right">
-            <img src="images/arrow-swiper-right.svg">
-          </i>
-        </div>
-
-        <div class="filter__section">
-            <div class="info__wrapper">
-              <div class="info__accordion">Информация <img class="info__accordion__arrow" src="images/arrow-blue.svg"></div>
-              
-              <div class="info__accordion-section height" >
-                <p id="accordion-info-title">Дата регистрации</p>
-                <p id="accordion-info-date">24 января 2019</p>
-              </div>
-              <div id="info__delete-open" class="info__delete">Удалить из моих продуктов</div>
-            </div>
-
-            <div class="filter__buy">
-              <a href="https://msk.shop.aquaphor.ru/pitcher-cartridges" id="buy__link" target="_blank">Купить сменные модули</a>
-              <img class="filter__arrow" src="images/arrow-blue.svg">
-            </div>
-        </div>
-        
-        <div class="filter__section second">
-          <div class="info__wrapper">
-            <div class="info__accordion">Информация <img class="info__accordion__arrow" src="images/arrow-blue.svg"></div>
-            
-            <div class="info__accordion-section second height-tall" >
-              <div class="info__title-wrapper">
-                <p id="info__title">Аквафор Кристалл А для жесткой воды</p>
-                <img src="images/arrow.svg">
-              </div>
-              <p id="accordion-info-title">Дата регистрации</p>
-              <p id="accordion-info-date">24 января 2019</p>
-              <p id="serial__number-title">Серийный номер</p>
-              <p id="serial__number">SW01928DLWJ19</p>
-            </div>
-            <div id="info__delete-open" class="info__delete">Удалить из моих продуктов</div>
-          </div>
-
-          <div class="about__wrapper">
-              <div class="about__accordion">
-                Модули в комплектации 
-                <img class="img-blue-arrow" src="images/arrow-blue.svg">
-              </div>
-              <div class="about__accordion-section">
-
-                <div class="about__items">
-                  <div class="about__item">
-                    <div class="item__wrapper">
-                      <img class="item__img" src="images/small-item.png">
-                      <a href="#" id="item__title">Сменный модуль K3</a>
+            <div class="order__success__wrapper-body">
+              <div class="order-body__wrapper">
+                <p id="order-body__wrapper__way">Способ получения</p>
+                <p id="order-body__wrapper__delivery">Адрес доставки</p>
+                <p id="order-body__wrapper__address">Пункт выдачи заказов АКВАФОР. Санкт-Петербург, Торфяная дорога, д. 15, корп. 1</p>
+                <p id="order-body__wrapper__receiver">Получатель</p>
+                <p id="order-body__wrapper__contacts">Иван, тел. +7 999 345 76 93</p>
+                <p id="order-body__wrapper__details">Состав заказа</p>
+                <div class="order__items">
+                  <div class="order__item">
+                    <img class="order__item-img" src="images/myOrders-icon1.png">
+                    <div class="order__item__wrapper">
+                      <a href="#" id="order__item__title">АКВАФОР Викинг 300 для питьевой воды</a>
+                      <div class="order__item__inner">
+                        <p id="order__item__price">15 190 ₽</p>
+                        <p id="order__item__amount">1 шт</p>
+                      </div>
                     </div>
-                    <button class="btn__add-to-cart">В корзину за <span>1 190 ₽</span></button>
                   </div>
-
-                  <div class="about__item">
-                    <div class="item__wrapper">
-                      <img class="item__img" src="images/small-item.png">
-                      <a href="#" id="item__title">Сменный модуль K2</a>
+                  <div class="order__item">
+                    <img class="order__item-img" src="images/myOrders-icon2.png">
+                    <div class="order__item__wrapper">
+                      <a href="#" id="order__item__title">Аквафор DWM-101S Морион</a>
+                      <div class="order__item__inner">
+                        <p id="order__item__price">15 190 ₽</p>
+                        <p id="order__item__amount">1 шт</p>
+                      </div>
                     </div>
-                    <button class="btn__in-cart"><img src="images/success.svg">В корзине</button>
-                  </div>
-
-                  <div class="about__item">
-                    <div class="item__wrapper">
-                      <img class="item__img" src="images/small-item.png">
-                      <a href="#" id="item__title">Сменный модуль K7</a>
-                    </div>
-                    <button class="btn__add-to-cart">В корзину за 3 200 ₽</button>
                   </div>
                 </div>
-
-              </div>
-
-              <div class="about__accordion">Наборы для замены <img class="img-blue-arrow" src="images/arrow-blue.svg"></div>
-              <div class="about__accordion-section">
-                <div class="about__items">
-                  <div class="about__item">
-                    <div class="item__wrapper">
-                      <img class="item__img" src="images/small-item2.png">
-                      <a href="#" id="item__title">Комплект модулей для Аквафор DWM-101S</a>
-                    </div>
-                    <button class="btn__add-to-cart">В корзину за <span>1 190 ₽</span></button>
+                <p id="order-body__wrapper__payment">Оплата</p>
+                <div class="order__payment__wrapper">
+                  <div class="order__payment__inner">
+                    <p id="order__payment-way">Способ оплаты</p>
+                    <p id="order__payment-type">Картой при получении</p>
                   </div>
-
-                  <div class="about__item">
-                    <div class="item__wrapper">
-                      <img class="item__img" src="images/small-item2.png">
-                      <a href="#" id="item__title">Комплект модулей для Аквафор DWM-101S и DWM-101 (без мембраны)</a>
-                    </div>
-                    <button class="btn__in-cart">Нет в наличии</button>
+                  <div class="order__payment__inner">
+                    <p id="order__payment__items">Товары</p>
+                    <p id="order__payment__items-price">45 015 ₽</p>
                   </div>
-
-                  <div class="about__item">
-                    <div class="item__wrapper">
-                      <img class="item__img" src="images/small-item3.png">
-                      <a href="#" id="item__title">Комплект сменных модулей для Аквафор DWM-101S Морион   на год (без мембраны)</a>
-                    </div>
-                    <button class="btn__add-to-cart">В корзину за 3 200 ₽</button>
+                  <div class="order__payment__inner">
+                    <p id="order__payment__delivery">Доставка</p>
+                    <p id="order__payment__delivery-price">0 ₽</p>
+                  </div>
+                  <div class="order__payment__inner">
+                    <p id="order__payment__total">Итого</p>
+                    <p id="order__paymeny__total-price">45 015 ₽</p>
                   </div>
                 </div>
               </div>
-
-              <div class="about__accordion border display">Схема замены модулей <img class="img-blue-arrow" src="images/arrow-blue.svg"></div>
-              <div class="about__accordion-section">
-                <img class="about__blueprint" src="images/blueprint.png">
-              </div>
+            </div>
           </div>
+        </div>
 
-      </div>
 
 		</div>
 	</section>
 
-
-
     <!-- END CONTENT-->
 
-    <!-- POPUP -->
-    <div id="popup__delete" class="popup__delete">
-      <div class="popup__delete__body">
-        <div class="popup__delete__content">
-          <div class="popup__image-wrapper">
-            <img id="personalData__close" class="popup__delete__close-img" src="images/cross.svg">
-          </div>
-          <div class="popup__delete__text-wrapper">
-            <p class="text-wrapper__title">Подвердите действие</p>
-            <p id="text-wrapper__confirm">Вы уверены что хотите удалить <span class="product__title-popup">Аквафор Кристалл Н</span> из списка продуктов?</p>
-            <div class="btns__wrapper">
-              <button  class="text-wrapper__btn">Отменить</button>
-              <button class="text-wrapper__btn">Удалить</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+   
 
     <!-- END POPUP -->
 

@@ -742,9 +742,9 @@
     margin-right: 0;
     border-bottom: 1px solid rgba(43, 27, 53, .1);
   }
-  .info__accordion.active {
+  /* .info__accordion.active {
     border-bottom: none;
-  }
+  } */
   .info__accordion-section {
     background: #FFF;
     margin-bottom: 0;
